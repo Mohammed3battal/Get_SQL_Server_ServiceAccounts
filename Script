@@ -1,0 +1,6 @@
+-- List SQL Server services and their associated service accounts
+SELECT 
+    servicename AS ServiceName,
+    service_account AS ServiceAccount
+FROM 
+    sys.dm_server_services;
